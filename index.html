@@ -15,20 +15,21 @@
 
         body {
             display: grid;
-            grid-template-columns: 230px auto;
+            grid-template-columns: 230px 1fr;
             height: 100vh;
         }
 
         .container nav {
-            margin-top: 10px;
+            background-color: aqua;
         }
 
         .searchbar {
             height: 38px;
             width: 279px;
-            margin-left: 22px;
+            margin: 22px 0 0 22px;
             padding-left: 32px;
             border-radius: 5px;
+            mar
 
 
         }
@@ -41,7 +42,7 @@
 
         .nav {
             display: grid;
-            grid-template-columns: 25px 260px 25px 25px 25px;
+            grid-template-columns: 260px 25px 25px 25px;
             grid-template-rows: 100px;
         }
 
@@ -59,7 +60,7 @@
             background-color: transparent;
             position: absolute;
             left: 28px;
-            top: 7px
+            top: 30px
         }
 
         .searchbar_logo_button:hover {
@@ -123,6 +124,11 @@
                 color: #fff;
 
         }
+        .sun img{
+            height: 22px;
+            width: 22px;
+        }
+
     </style>
 </head>
 
@@ -155,6 +161,9 @@
                 <button class="searchbar_logo_button" type="submit"><img class="searchbar_logo"
                         src="https://cdn-icons-png.flaticon.com/128/17593/17593274.png"></button>
                 <input class="searchbar" type="search" name="searched" placeholder=" What do you want to cook?">
+            </div>
+            <div class="sun">
+                <img src="sidebar_images/white_sun.png">
             </div>
         </nav>
         <main>
